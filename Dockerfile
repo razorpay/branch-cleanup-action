@@ -14,4 +14,5 @@ RUN	apk add --no-cache \
 
 COPY cleanup-pr-branch /usr/bin/cleanup-pr-branch
 
+USER nobody
 ENTRYPOINT ["cleanup-pr-branch"]
